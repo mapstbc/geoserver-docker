@@ -5,4 +5,4 @@ MAINTAINER safezpa
 #
 # copy ojdbc6.jar
 #
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY ojdbc6.jar /usr/local/tomcat/webapps/geoserver/WEB-INF/lib
