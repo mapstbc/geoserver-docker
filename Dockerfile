@@ -1,4 +1,4 @@
-FROM geonode/geoserver:alias
+FROM geonode/geoserver
 MAINTAINER safezpa
 
 
