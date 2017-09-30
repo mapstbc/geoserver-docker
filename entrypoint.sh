@@ -18,18 +18,18 @@ else
 fi
 
 # control the value of NGINX_BASE_URL variable
-if ! [ -z ${NGINX_BASE_URL} ]
-then
+#if ! [ -z ${NGINX_BASE_URL} ]
+#then
 
-    echo "NGINX_BASE_URL is empty so I'll run the python utility \n" >> /usr/local/tomcat/tmp/set_geoserver_auth.log
-    NGINX_BASE_URL=`python /usr/local/tomcat/tmp/get_nginxhost_ip.py`
-    echo "The calculated value is now NGINX_BASE_URL='$NGINX_BASE_URL' \n" >> /usr/local/tomcat/tmp/set_geoserver_auth.log
+#    echo "NGINX_BASE_URL is empty so I'll run the python utility \n" >> /usr/local/tomcat/tmp/set_geoserver_auth.log
+#    NGINX_BASE_URL=`python /usr/local/tomcat/tmp/get_nginxhost_ip.py`
+#    echo "The calculated value is now NGINX_BASE_URL='$NGINX_BASE_URL' \n" >> /usr/local/tomcat/tmp/set_geoserver_auth.log
 
-else
+#else
 
-    echo "NGINX_BASE_URL is filled so I'll leave the found value '$NGINX_BASE_URL' \n" >> /usr/local/tomcat/tmp/set_geoserver_auth.log
+#    echo "NGINX_BASE_URL is filled so I'll leave the found value '$NGINX_BASE_URL' \n" >> /usr/local/tomcat/tmp/set_geoserver_auth.log
 
-fi
+#fi
 
 # set basic tagname
 TAGNAME=( "baseUrl" )
