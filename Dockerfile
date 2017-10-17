@@ -72,7 +72,7 @@ COPY requirements.txt /usr/local/tomcat/tmp
 COPY get_dockerhost_ip.py /usr/local/tomcat/tmp
 COPY get_nginxhost_ip.py /usr/local/tomcat/tmp
 COPY entrypoint.sh /usr/local/tomcat/tmp
-COPY ojdbc6.jar /usr/local/tomcat/webapps/geoserver/WEB-INFb/lib/ojdbc6.jar
+COPY ojdbc6.jar /usr/local/tomcat/webapps/geoserver/WEB-INF/lib/ojdbc6.jar
 COPY geonode-geoserver-ext-2.10-SNAPSHOT.jar /usr/local/tomcat/webapps/geoserver/WEB-INF/lib/geonode-geoserver-ext-2.10-SNAPSHOT.jar
 COPY gt-process-16-20170926.110419-897.jar /usr/local/tomcat/webapps/geoserver/WEB-INF/lib/gt-process-16-20170926.110419-897.jar
 
